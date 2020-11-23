@@ -1,5 +1,12 @@
-import { Video } from '../services/video.interface';
+export type TableVideo = {
+  id: number;
+  name: string;
+  author: string;
+  categories: string[];
+};
 
 export interface VideosTableProps {
-  videos: Video[];
+  videos: TableVideo[];
+  onDelete: (id: number) => void;
+  onEdit: (id: number) => void;
 }

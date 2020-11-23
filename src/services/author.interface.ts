@@ -7,3 +7,8 @@ export interface Author {
     name: string;
   }[];
 }
+
+export interface AuthorInfo {
+  id: number;
+  name: string;
+}
